@@ -18,6 +18,7 @@ describe("module to test => function to test", () => {
 
 	it(`should return ${expected}`, () => {
 		const result = 5;
+		
 		// assign result a value from functionToTest
 		expect(result).to.equal(expected);
 		// or using the should() syntax
