@@ -1,0 +1,96 @@
+{
+	"common": {
+		"name": "schulferien_at",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"uk": "Початкова версія",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Schulferien AUSTRIA",
+		"titleLang": {
+			"en": "Schulferien AUSTRIA",
+			"de": "Schulferien ÖSTERREICH",
+			"ru": "Шульфериен АВСТРИЯ",
+			"pt": "Schulferien ÁUSTRIA",
+			"nl": "Schulferien OOSTENRIJK",
+			"fr": "Schulferien AUTRICHE",
+			"it": "Schulferien AUSTRIA",
+			"es": "Schulferien AUSTRIA",
+			"pl": "Schulferien AUSTRIA",
+			"uk": "Schulferien АВСТРІЯ",
+			"zh-cn": "奥地利"
+		},
+		"desc": {
+			"en": "schulferien_at",
+			"de": "schulferien_at",
+			"ru": "schulferien_at",
+			"pt": "schulferien_at",
+			"nl": "schulferien_at",
+			"fr": "schulferien_at",
+			"it": "schulferien_at",
+			"es": "schulferien_at",
+			"pl": "schulferien_at",
+			"uk": "schulferien_at",
+			"zh-cn": "schulferien_at"
+		},
+		"authors": [
+			"pmoser <pmoser@hak1.at>"
+		],
+		"keywords": [
+			"ioBroker",
+			"template",
+			"Smart Home",
+			"home automation"
+		],
+		"license": "MIT",
+		"licenseInformation": {
+			"type": "free",
+			"license": "MIT"
+		},
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "schulferien_at.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/pmoser@hak1.at/ioBroker.schulferien_at/main/admin/schulferien_at.png",
+		"readme": "https://github.com/pmoser@hak1.at/ioBroker.schulferien_at/blob/main/README.md",
+		"loglevel": "info",
+		"tier": 3,
+		"mode": "daemon",
+		"schedule": "0 0 * * *",
+		"type": "date-and-time",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "json"
+		},
+		"dependencies": [
+			{
+				"js-controller": ">=3.3.22"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=5.1.13"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42",
+		"bundeslandauswahl": 3
+	},
+	"objects": [],
+	"instanceObjects": []
+}

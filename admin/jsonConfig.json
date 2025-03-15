@@ -1,0 +1,52 @@
+{
+	"i18n": true,
+	"type": "panel",
+	"items": {
+		"option1": {
+			"type": "checkbox",
+			"label": "option1",
+			"newLine": true
+		},
+		"option2": {
+			"type": "text",
+			"label": "option2",
+			"newLine": true
+		},
+		"anzeigetage": {
+			"type": "slider",
+			"min": 1,
+			"max": 365,
+			"step": 1.0,
+			"default": 30,
+			"label": "Wie weit in die Zukunft (Anzahl Tage) sollen die Schulferien angeigt werden?",
+			"newLine": true
+		},
+		 
+		"bundeslandauswahl": {
+			"type": "select",
+			"default": "AT-KÄ",
+			"label": "Bundesland wählen",
+			"tooltip": "Bundeslandauswahl ist erforderlich, da die Bundesländer teils unterschiedliche Ferienzeiten haben.",
+			"sm": 4,
+			"md": 3,
+			"lg": 2,
+			"options": [
+				{"label": {"en": "Burgenland"}, "value":  "AT-BL" },
+				{"label": {"en": "Kärnten"}, "value": "AT-KÄ"},
+				{"label": {"en": "Oberösterreich"}, "value": "AT-OÖ"},
+				{"label": {"en": "Niederösterreich"}, "value": "AT-N"},
+				{"label": {"en": "Salzburg"}, "value": "AT-SB"},
+				{"label": {"en": "Steiermark"}, "value": "AT-SM"},
+				{"label": {"en": "Tirol"}, "value": "AT-TI"},
+				{"label": {"en": "Vorarlberg"}, "value": "AT-VA"},
+				{"label": {"en": "Wien"}, "value": "AT-WI"}
+					   ],
+			"newLine": true
+		},
+		"icon_info": {
+			"type": "header",
+			"size": 3,
+			"text": "ICON from https://www.flaticon.com/de/kostenloses-icon/ferien_7058066"
+		}		
+	}
+}
