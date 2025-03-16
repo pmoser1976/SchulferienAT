@@ -16,6 +16,9 @@ const utils = require("@iobroker/adapter-core");
 //const ferienurl = "https://openholidaysapi.org/SchoolHolidays?countryIsoCode=AT&subdivisionCode=AT-KA&languageIsoCode=DE&validFrom=2024-01-01&validTo=2024-12-31";
 const BASE_API_ENDPOINT =  `https://openholidaysapi.org/SchoolHolidays?countryIsoCode=AT&languageIsoCode=DE`;
 
+/**
+ * @this {any}
+ */
 async function getHolidayDates(){
 	//const API_ENDPOINT = `${BASE_API_ENDPOINT}&subdivisionCode=${this.config?.bundeslandauswahl || "AT-KÄ"}&validFrom=${(new Date()).toISOString().slice(0, 10)}&validTo=${new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString().slice(0, 10)}`;
 	const API_ENDPOINT = `${BASE_API_ENDPOINT}&subdivisionCode=${this.config?.bundeslandauswahl || "AT-KÄ"}&validFrom=${(new Date()).toISOString().slice(0, 10)}&validTo=${new Date(new Date().setDate(new Date().getDay() + this.config.anzeigetage)).toISOString().slice(0, 10)}`;
