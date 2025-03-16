@@ -20,8 +20,7 @@
 			"default": 30,
 			"label": "Wie weit in die Zukunft (Anzahl Tage) sollen die Schulferien angeigt werden?",
 			"newLine": true
-		},
-		 
+		},		 
 		"bundeslandauswahl": {
 			"type": "select",
 			"default": "AT-KÄ",
