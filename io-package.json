@@ -89,7 +89,8 @@
 	"native": {
 		"option1": true,
 		"option2": "42",
-		"bundeslandauswahl": 3
+		"bundeslandauswahl": 3,
+		"anzeigetage": 5
 	},
 	"objects": [],
 	"instanceObjects": []

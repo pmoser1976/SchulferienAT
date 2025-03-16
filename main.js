@@ -24,7 +24,7 @@ async function getHolidayDates(){
 	const API_ENDPOINT = `${BASE_API_ENDPOINT}&subdivisionCode=${this.config?.bundeslandauswahl || "AT-KÄ"}&validFrom=${(new Date()).toISOString().slice(0, 10)}&validTo=${new Date(new Date().setDate(new Date().getDay() + this.config.anzeigetage)).toISOString().slice(0, 10)}`;
 	this.log.info(API_ENDPOINT);
 	const response = await fetch(API_ENDPOINT);
-	const ferien_typen= await response.json();
+	const ferien_typen = await response.json();
 
 	// objekt variablen zuerst anlegen
 
@@ -52,6 +52,7 @@ async function getHolidayDates(){
 	const days=1;
 	const date_tomorrow = new Date(Date.now()+days*24*60*60*1000);
 	//const date_tomorrow = new Date(new Date().setDate(new Date().getDate() + days));
+	// @ts-ignore
 	const date_begin = new Date(ferien_typen[0].startDate);
 	const date_end = new Date(ferien_typen[0].endDate);
 
@@ -111,6 +112,9 @@ async function getHolidayDates(){
 	// "Sommerferien.Ende", {val: "11.9.2024", ack: true}
 }
 
+/**
+ * @this {any}
+ */
 async function delete_all_states() {
 	// deletes all states of this instance
 	//this.deleteState("schulferien_at.0","listener",)
